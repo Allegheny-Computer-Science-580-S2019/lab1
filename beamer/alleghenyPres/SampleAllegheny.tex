@@ -1,0 +1,126 @@
+\documentclass{beamer}
+%\documentclass[handout]{beamer}
+
+\usetheme[language=english,framenumber,totalframenumber]{AlleghenyCollege}
+
+\title{My Awesome Presentation}
+\subtitle{Beamer customized to Allegheny College colors}
+\author{Student}
+\date{\today}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+%%%%%%%%%%%% Slide %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+  \frametitle{Itemized lists}
+ 	\begin{itemize}
+        \item One item
+        \item Two items
+        \item More items
+    \end{itemize}
+\end{frame}
+%%%%%%%%%%%% Slide %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+  \frametitle{Enumerated lists}
+	\begin{enumerate}
+        \item Very similar to itemized list
+        \item Only using numbers instead of bullets
+    \end{enumerate}
+\end{frame}
+%%%%%%%%%%%% Slide %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+  \frametitle{I can do pretty math!}
+	\begin{equation}
+	y = 2x + 3
+	\end{equation}
+    \begin{theorem}
+  		In a right triangle, the square of hypotenuse equals
+  		the sum of squares of two other sides.
+	\end{theorem}
+
+\end{frame}
+%%%%%%%%%%%% Slide %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+  \frametitle{Tables}
+  \begin{center}
+	\begin{tabular}{|c|c|}
+		\hline 
+        \textbf{Description} & \textbf{Order of growth} \\
+        \hline 
+        Constant & $1$ \\
+        Logarithmic & $log N$ \\
+        Linear & $N$ \\
+        Linearithmic & $N log N$ \\
+        Quadratic & $N^2$ \\
+        Cubic & $N^3$ \\
+        Exponential & $2^N$\\
+        \hline
+    \end{tabular}
+    \end{center}
+\end{frame}
+%%%%%%%%%%%% Slide %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+  \frametitle{Blocks}
+    \begin{exampleblock}{More precise definition}
+    Given two nonnegative functions $f$ and $g$, $f(N)$ is  $O(g(N))$ iff $\exists$ constant $c > 0$ so that $f(N) \leq c g(N)$
+    \end{exampleblock}
+\end{frame}
+%%%%%%%%%%%% Slide %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[label=Flower]
+  \frametitle{Image}
+    \begin{center}
+        \includegraphics[width=2in]{images/flower.jpeg}
+    \end{center}
+    \hyperlink{Overlays}{\beamerbutton{Overlays}}
+\end{frame}
+%%%%%%%%%%%% Slide %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+  \frametitle{Pause}
+  \pause
+ 	\begin{itemize}
+        \item Sometimes
+        \pause
+        \item it is nice
+        \pause
+        \item to pause
+    \end{itemize}
+\end{frame}
+%%%%%%%%%%%% Slide %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[label=Overlays]
+  \frametitle{Overlays}
+
+	\setbeamercovered{transparent}
+    \begin{itemize}
+        \item<1-> One item
+        \item<2-> at a 
+        \item<3-> time
+    \end{itemize}
+    \hyperlink{Flower}{\beamerbutton{Flower}}
+\end{frame}
+%%%%%%%%%%%% Slide %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\begin{center}
+\Huge
+ Thank You!
+
+Questions?
+
+\vspace{0.2in}
+
+\normalsize
+
+\href{mailto:student@allegheny.edu}{\color{blue}{\texttt{student@allegheny.edu}}}
+
+\vspace{0.1in}
+
+\href{http://cs.allegheny.edu/\sim student}{\color{blue}{\texttt{Student Name\\ http://cs.allegheny.edu/}}}
+
+\end{center}
+\end{frame}
+
+
+\end{document}
